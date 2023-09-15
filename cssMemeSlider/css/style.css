@@ -8,91 +8,205 @@
 
 * {   
   margin: 0;
-  padding: 0;
-}
-  
-html {  
-  box-sizing: border-box;
-  font-size: 14px;
-  
+  padding: 0;  
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
-
-body {  
-    height: 10em;
-    display: flex;
-    align-items: center;
-  max-width: 1024px;
-  min-width: 500px;
-  height: 80%;
-  margin: 5vh 7vw;
   
-
-  line-height: 1.2;
-  font-family: 'Forum';
-  font-style: normal;
-  color:#a104d5;
-  background: #0C0C0E;
-
-  overflow-x: hidden;
-}
-
-.main {
-  
-    justify-content: center;
-  margin: 0 auto;
+html { 
+    font-family: Forum;
+    font-size: 62.5%;
+    color: #73c3ff;
+    background-color: #0e0e0e;
+    overflow-x: hidden;
 }
 
 
 
+@media screen and (min-width: 500px) {
+    main {
+      display: flex;     
+      width: 80vw;
+      height: 90vh;      
+      margin: 0 auto;
+      padding-top: 4rem;
+      padding-bottom: 3rem;
 
-.slider {
+      font-size: 3rem;      
+
+      background-color: #0e0e0e;      
+    }
     
-   
-  
-  /*margin: 0 auto;*/
+    img {
+        max-width: 100%;
+        border-radius: 2%;
+      }
 
-  border: #a104d5 5px solid;
-  overflow: hidden;
+    .slides {
+        display: inline-flex;
+        margin-bottom: 2rem;
+
+        
+        
+    }
+
+    .buttons_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        gap: 1rem;       
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        gap: 1rem;
+    }
+
+    .bar {
+        border-radius: 50%;
+        border: #73c3ff solid 0.5rem;
+    }
+
+    .text {
+        margin-top: 2rem;
+
+    }
+
+    
 }
 
-.wrapperr {
-    margin: 0 auto;
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+
+        background-color: rgb(123, 235, 235);
+    }
+    
+    img {
+        max-width: 100%;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    
+}
+                     
+@media screen and (min-width: 768px) {
+    body {
+      background-color: #73c3ff; 
+    }
+}      
+
+@media screen and (min-width: 960px) {
+    body {
+      background-color: #0e0e0e;
+    }
+}      
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    main {
+      display: flex;     
+      width: 80vw;
+      height: 90vh;      
+      margin: 0 auto;
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+
+      font-size: 3rem;      
+
+      background-color: #0e0e0e;
+      border: #73ff9d solid 1px;
+    }
+    
+    img {
+        max-width: 100%;
+        border-radius: 2%;
+      }
+
+    .slider {
+        width: 110rem;
+        height: 60rem;
+        margin: 0 auto;
+        
+        overflow: hidden;
+        
+        border: #73c3ff solid 1px;
+    }
+
+    .wrapper {
+        transform: translate(-50%, -50%);
+    }
+
+    .slides {
+        display: inline-flex;
+        margin-bottom: 2rem;
+
+        
+        
+    }
+
+    .buttons_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        gap: 1rem;       
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        gap: 1rem;
+    }
+
+    .bar {
+        border-radius: 50%;
+        border: #73c3ff solid 0.5rem;
+    }
+
+    .text {
+        margin-top: 2rem;
+
+    }
+
+    
 }
 
-.text {
-    display: inline-block;
-    flex-start
-    font-size: xx-large;
-}
 
-.navigation {
-   display: inline-block
-   flex-end
-}
 
-.bar {
-    width: ;
-    height: ;
-    margin: 2em;
-    color: #a104d5;
-    background: #a104d5;
 
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
 
-.bar:hover {
-    background: #0C0C0E;
-    transform: scale(1.1);
-}
 
-.slide {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-}
+
 
 /* Portrait tablets and small desktops */
 media (min-width: 768px) and (max-width: 991px) {
