@@ -1,0 +1,95 @@
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/forum-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+* {   
+  margin: 0;
+  padding: 0;
+}
+  
+html {  
+  box-sizing: border-box;
+  font-size: 14px;
+  
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {  
+    height: 10em;
+    display: flex;
+    align-items: center;
+  max-width: 1024px;
+  min-width: 500px;
+  height: 80%;
+  margin: 5vh 7vw;
+  
+
+  line-height: 1.2;
+  font-family: 'Forum';
+  font-style: normal;
+  color:#a104d5;
+  background: #0C0C0E;
+
+  overflow-x: hidden;
+}
+
+.main {
+  
+    justify-content: center;
+  margin: 0 auto;
+}
+
+
+
+
+.slider {
+    
+   
+  
+  /*margin: 0 auto;*/
+
+  border: #a104d5 5px solid;
+  overflow: hidden;
+}
+
+.wrapperr {
+    margin: 0 auto;
+}
+
+.text {
+    display: inline-block;
+    flex-start
+    font-size: xx-large;
+}
+
+.navigation {
+   display: inline-block
+   flex-end
+}
+
+.bar {
+    width: ;
+    height: ;
+    margin: 2em;
+    color: #a104d5;
+    background: #a104d5;
+
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.bar:hover {
+    background: #0C0C0E;
+    transform: scale(1.1);
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
