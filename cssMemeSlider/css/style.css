@@ -21,69 +21,179 @@ html {
     overflow-x: hidden;
 }
 
+/*main {
+    /*display: flex;    
+    width: 80vw;
+    height: 90vh;      
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
 
+    font-size: 3rem;      
 
-@media screen and (min-width: 500px) {
-    main {
-      display: flex;     
-      width: 80vw;
-      height: 90vh;      
-      margin: 0 auto;
-      padding-top: 4rem;
-      padding-bottom: 3rem;
+    background-color: #0e0e0e;      
+}*/
 
-      font-size: 3rem;      
+img {
+    max-width: 100%;
+    border-radius: 2%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
 
-      background-color: #0e0e0e;      
-    }
+.slider {
     
-    img {
-        max-width: 100%;
-        border-radius: 2%;
-      }
+    width: 80vw;
+    height: 90vh; 
+    overflow: hidden;     
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
 
-    .slides {
-        display: inline-flex;
-        margin-bottom: 2rem;
+    border: #73c3ff solid 1px;
+}
 
-        
-        
-    }
+.wrapper {
+    margin: 0 auto;
+}
 
-    .buttons_wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-        gap: 1rem;       
-    }
+.images__wrapper {
+    /*display: inline-flex;*/    
+    /*width: 225rem;*/
+    display: flex;
+    width: 400%;
+            
+}
 
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-        gap: 1rem;
-    }
+.slide {
+    width: 25%;
 
-    .bar {
-        border-radius: 50%;
-        border: #73c3ff solid 0.5rem;
-    }
+    transition: all 0.7s ease;    
+}
 
-    .text {
-        margin-top: 2rem;
+.slide img {
+    width: 100%;
+    
+}
 
-    }
+input[name="button"] {
+    display: none;
+    visibility: hidden;
+}
 
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    
+    gap: 2rem;
+}
+
+.bar {
+    width: 1.5rem;
+    height: 1.5rem;    
+    
+    border-radius: 50%;
+    border: #73c3ff solid 1rem;
+
+    cursor: pointer;
+    transition: all 0.8 ease;
+}
+
+.bar:hover {
+    border: #fefefe solid 1rem;
+    /*background-color: #fefefe;*/
+    
+    transition: all 0.5 ease;
+}
+
+.text {
+    /*margin-top: 3.5rem;*/
+    margin-left: 0;
+    font-size: 2.5rem;
+    border: #d573ff solid 1px;
+}
+
+
+input[type="radio"]:checked + .bar {
+    background-color: #0e0e0e;
+}
+
+
+#btn_1:checked ~ .first_slide {
+    margin-left: 0;
+    
+}
+
+#btn_2:checked ~ .first_slide {
+    margin-left: -25%;
+    
+}
+
+#btn_3:checked ~ .first_slide {
+    margin-left: -50%;
+}
+
+#btn_4:checked ~ .first_slide {
+    margin-left: -75%;
+}
+
+
+#btn_1:checked ~ .first_text {
+    margin-left: 0;
+}
+
+#btn_2:checked ~ .first_text {
+    margin-left: -25%;
+}
+
+#btn_3:checked ~ .first_text {
+    margin-left: -50%;
+}
+
+#btn_4:checked ~ .first_text {
+    margin-left: -75%;
+}
+
+.text_wrapper {
+    
+    display: flex;
+    width: 400%;
+    
+    margin-bottom: 2rem;        
+}
+
+.text {
+    width: 25%;
+
+    transition: all 0.7s ease;    
+}
+
+.text img {
+    width: 100%;
     
 }
 
 
 
 
+@media screen and (min-width: 550px) {    
 
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+        
+        gap: 2rem;
+    }   
 
+    .text {
+        margin-top: 3rem;
+        margin-left: 0;
+    }    
+}
 
 
 
@@ -130,9 +240,9 @@ html {
 
 
 
-@media screen and (min-width: 1024px) {
+/*@media screen and (min-width: 1024px) {
     main {
-      display: flex;     
+      display: flex;   
       width: 80vw;
       height: 90vh;      
       margin: 0 auto;
@@ -151,6 +261,7 @@ html {
       }
 
     .slider {
+        ;
         width: 110rem;
         height: 60rem;
         margin: 0 auto;
@@ -161,15 +272,12 @@ html {
     }
 
     .wrapper {
-        transform: translate(-50%, -50%);
+        
     }
 
-    .slides {
+    .images__wrapper {
         display: inline-flex;
-        margin-bottom: 2rem;
-
-        
-        
+        margin-bottom: 2rem;        
     }
 
     .buttons_wrapper {
@@ -195,14 +303,8 @@ html {
 
     .text {
         margin-top: 2rem;
-
-    }
-
-    
-}
-
-
-
+    }    
+}*/
 
 
 
