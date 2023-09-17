@@ -44,29 +44,19 @@ label {
     transition: 0.3s;
 }
 
-.slider {
-    
+.slider {    
     width: 90%;
     max-width: 53rem;  /* 430px*/
     height: 90vh;
-    max-height: 70rem;
-    
-    
-     
+    max-height: 70rem;     
     margin: 0 auto;
     margin-top: 3rem;
 
-    padding: 1rem 0.5rem;
-    
-    background-color: rgb(85, 85, 92);
-    border: #73ff8a solid 1px;
+    padding: 1rem 0.5rem;    
 }
 
-.images__wrapper {
-    /*display: inline-flex;*/
-    /*width: 225rem;*/    
-    width: 100%;
-    
+.images__wrapper {        
+    width: 100%;    
     margin: 0 auto;            
 }
 
@@ -100,48 +90,36 @@ label {
 .navigation__wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-       
+    align-items: center;       
 }
 
 .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2rem;
+    height: 2rem;    
     
-    
-    gap: 2rem;    
+    gap: 1.5rem;    
 }
 
 .text_wrapper {
     overflow: hidden;
 
-    display: flex;
-   align-self: flex-start;
-    
-    gap: 1rem;
+    display: flex;       
 }
 
 .text {
-    flex-shrink: 0;
-    align-self: flex-start;    
-    width: 100%;
-    margin-left: 0;
+    flex-shrink: 0;    
+    width: 100%;    
 
-    font-size: 2.5rem;
-    text-align: left;
-
-    border: #d573ff solid 1px;
+    font-size: 2.5rem;   
 
     transition: trasform 0.7s ease;
 }
 
 input[name="button"] {
-    display: none;
-    visibility: hidden;
+    display: none;    
 }
-
 
 
 /* buttons layout and animation start*/
@@ -210,21 +188,22 @@ input[name="button"] {
 
 /* change text animation start*/
 #btn_1:checked ~ .navigation__wrapper .text_wrapper div {
-    margin-left: 0;    
+    transform: translate(0);    
 }
 
 #btn_2:checked ~ .navigation__wrapper .text_wrapper div {
-    margin-left: -25%;    
+    transform: translate(-100%);    
 }
 
 #btn_3:checked ~ .navigation__wrapper .text_wrapper div {
-    margin-left: -50%;
+    transform: translate(-200%);
 }
 
 #btn_4:checked ~ .navigation__wrapper .text_wrapper div {
-    margin-left: -75%;
+    transform: translate(-300%);
 }
 /* change text animation end*/
+
 
 /*change images animation start*/
 #btn_1:checked ~ .images img {
@@ -248,12 +227,6 @@ input[name="button"] {
 }
 
 /*change images animation end*/
-
-
-
-    
-
-
 
 
 
