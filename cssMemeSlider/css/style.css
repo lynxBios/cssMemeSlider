@@ -205,13 +205,11 @@ input[name="button"] {
 
 /* change text animation start*/
 #btn_1:checked ~ .navigation__wrapper .text_wrapper div {
-    margin-left: 0;
-    
+    margin-left: 0;    
 }
 
 #btn_2:checked ~ .navigation__wrapper .text_wrapper div {
-    margin-left: -25%;
-    
+    margin-left: -25%;    
 }
 
 #btn_3:checked ~ .navigation__wrapper .text_wrapper div {
@@ -224,6 +222,21 @@ input[name="button"] {
 /* change text animation end*/
 
 /*change images animation start*/
+#btn_1:checked ~ .images img {
+    margin-left: 0;
+}
+
+#btn_2:checked ~ .images img {
+    margin-left: -25%;
+}
+
+#btn_3:checked ~ .images  img {
+    margin-left: -50%;
+}
+
+#btn_4:checked ~ .images img {
+    margin-left: -75%;
+}
 
 /*change images animation end*/
 
