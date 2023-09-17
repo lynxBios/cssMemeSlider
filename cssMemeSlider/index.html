@@ -18,7 +18,7 @@
                 <input type="radio" name="button" id="btn_4">
     
                 <div class="images">
-                    <div class="slide"><img src="./assets/img/mem-7.jpg" width="640" height="640" alt="Your code is the worst I've ever run"></div>                
+                    <div class="slide"><img src="./assets/img/mem-7.jpg" alt="Your code is the worst I've ever run"></div>                
                     <div class="slide"><img src="./assets/img/mem-5.jpg" alt="What do I want to do"></div>
                     <div class="slide"><img src="./assets/img/mem-9.jpg" alt="Dad, why is the sky blue?"></div>
                     <div class="slide"><img src="./assets/img/mem-3.jpg" alt="What the client wants"></div>
@@ -34,18 +34,22 @@
                     </div>
     
                     <div class="navigation">
-                        <div class="area__circle__bars">
-                            <label for="btn_1" class="bar"></label>
-                        </div>
-                        <div class="area__circle__bars">
-                            <label for="btn_2" class="bar"></label>
-                        </div>
-                        <div class="area__circle__bars">
-                            <label for="btn_3" class="bar"></label>
-                        </div>
-                        <div class="area__circle__bars">
-                            <label for="btn_4" class="bar"></label>
-                        </div>                       
+                        
+                        <label for="btn_1" class="bar">
+                            <div class="area__circle__bars" id="area_1"></div>
+                        </label>
+
+                        <label for="btn_2" class="bar">
+                            <div class="area__circle__bars" id="area_2"></div>
+                        </label>
+                        
+                        <label for="btn_3" class="bar">
+                            <div class="area__circle__bars" id="area_3"></div>
+                        </label>
+                        
+                        <label for="btn_4" class="bar">
+                            <div class="area__circle__bars" id="area_4"></div>
+                        </label>                                              
                     </div>                     
                 </div>    
             </div>            
@@ -53,5 +57,4 @@
     </main>   
 </body>
 </html>
-
 <!-- git commit -m "feat: nazvanie_vashego_commita ($(LC_TIME=en_US.UTF-8 date '+%a, %b %d, %Y %I:%M:%S %p'))" -->
