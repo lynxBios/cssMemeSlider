@@ -50,9 +50,7 @@ label {
     height: 90vh;
     max-height: 70rem;     
     margin: 0 auto;
-    margin-top: 3rem;
-
-    padding: 1rem 0.5rem;    
+    margin-top: 3rem;     
 }
 
 .images__wrapper {        
@@ -64,18 +62,18 @@ label {
     overflow: hidden;
 
     display: flex;
-    width: 100%;
-    height: 45rem;
+    width: 100%;    
     max-width: 400%;
-    max-height: 70rem;
+    /*height: 45rem;*/
+    /*max-height: 70rem;*/
     margin: 0 auto;
 }
 
 .slide {
     flex-shrink: 0; /*1*/;
     width: 100%;
-    height: 100%;
-    max-height: 120rem;  /*было 39rem*/
+    /*height: 100%;*/
+    /*max-height: 120rem;  /*было 39rem*/
 
     transition: all 0.7s ease;    
 }
@@ -84,7 +82,9 @@ label {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    max-height: 40rem;    
+    max-height: 40rem;
+    
+    transition: 0.5s;
 }
 
 .navigation__wrapper {
@@ -97,7 +97,8 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2rem;    
+    height: 2rem;
+    margin-bottom: 1rem;    
     
     gap: 1.5rem;    
 }
@@ -105,16 +106,14 @@ label {
 .text_wrapper {
     overflow: hidden;
 
-    display: flex;       
+    display: flex;           
 }
 
 .text {
     flex-shrink: 0;    
     width: 100%;    
 
-    font-size: 2.5rem;   
-
-    transition: trasform 0.7s ease;
+    font-size: 2.5rem;    
 }
 
 input[name="button"] {
@@ -188,53 +187,68 @@ input[name="button"] {
 
 /* change text animation start*/
 #btn_1:checked ~ .navigation__wrapper .text_wrapper div {
-    transform: translate(0);    
+    transform: translate(0);
+    transition: 0.5s;    
 }
 
 #btn_2:checked ~ .navigation__wrapper .text_wrapper div {
-    transform: translate(-100%);    
+    transform: translate(-100%);
+    transition: 0.5s;    
 }
 
 #btn_3:checked ~ .navigation__wrapper .text_wrapper div {
     transform: translate(-200%);
+    transition: 0.5s;
 }
 
 #btn_4:checked ~ .navigation__wrapper .text_wrapper div {
     transform: translate(-300%);
+    transition: 0.5s;
 }
 /* change text animation end*/
 
 
 /*change images animation start*/
 #btn_1:checked ~ .images img {
-    /*margin-left: 0;*/
     transform: translate(0);
 }
 
 #btn_2:checked ~ .images img {
-    /*margin-left: -25%;*/
     transform: translate(-100%);
 }
 
 #btn_3:checked ~ .images  img {
-    /*margin-left: -50%;*/
     transform: translate(-200%);
 }
 
 #btn_4:checked ~ .images img {
-    /*margin-left: -75%;*/
     transform: translate(-300%);
 }
-
 /*change images animation end*/
 
 
-
-
-
-
-@media screen and (min-width: 550px) {    
-
+/*media 660px start*/
+@media screen and (max-width: 660px) {
+    .slider {    
+        width: 100%;
+        max-width: 90%;            
+        margin: 0 auto;
+        margin-top: 3rem;          
+    }
     
-}
+    .navigation__wrapper {        
+        flex-direction: column-reverse;
+        margin-top: 1rem;             
+    }
 
+    .navigation__wrapper .navigation {
+        width: 100%;        
+    }
+
+    .navigation__wrapper .text_wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 2rem;
+    }   
+}
+/*media 660px end*/
